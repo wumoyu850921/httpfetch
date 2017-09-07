@@ -1,20 +1,19 @@
 <p align="center">
-    <span>H</span>
+    H
 </p>
+ =====
 <p align="center">让http请求的调用更优雅</p>
 
 
 ## 概述
-还在使用下面的代码访问http接口么：
-<code>
- HttpClient client = new HttpClient();
+当我们提到java调用http请求时，我们想到的是HttpClient或是内置的HttpUrlConnention。
+然后会写下如下一串的代码访问http接口：
+``` bash
+        HttpClient client = new HttpClient();
         client.getHostConfiguration().setProxy("127.0.0.1", 8888);
-
         client.getHostConfiguration().setHost("bl.ocks.org", 80, "http");
-
         GetMethod getMethod = new GetMethod("/mbostock/raw/4090846/us-congress-113.json");
         client.executeMethod(getMethod);
-
         //打印服务器返回的状态
         System.out.println(getMethod.getStatusLine().getStatusCode());
         if(getMethod.getStatusLine().getStatusCode() == 200){
@@ -25,12 +24,12 @@
             System.out.println(response);
         }
         getMethod.releaseConnection();
- </code>
-[httpfetch]是有赞移动 Web UI 规范 `ZanUI` 的小程序现实版本，结合了微信的视觉规范，为用户提供更加统一的使用感受。
-
-包含 badge、btn、card、cell、color、dialog、form、helper、icon、label、loadmore、panel、quantity、steps、tab、toast、toptip 共计 17 类组件或元素。
-
-更多背景介绍，可以移步到 [我们专门写的的介绍文章](http://tech.youzan.com/zanui-weapp/)。
+ ```
+ 
+ 可是我们是不是有一种更优雅的方式呢？类似于MyBatis，通过一定的配置，然后在调用的时候只需要执行一个接口便可以完成上述代码的工作。
+ 
+ 这边是HttpFetch的初衷，让http的调用更优雅。
+ 
 
 ## 下载
 ``` bash
