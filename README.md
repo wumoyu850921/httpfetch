@@ -5,7 +5,28 @@
 
 
 ## 概述
-[ZanUI-WeApp]是有赞移动 Web UI 规范 `ZanUI` 的小程序现实版本，结合了微信的视觉规范，为用户提供更加统一的使用感受。
+还在使用下面的代码访问http接口么：
+<code>
+ HttpClient client = new HttpClient();
+        client.getHostConfiguration().setProxy("127.0.0.1", 8888);
+
+        client.getHostConfiguration().setHost("bl.ocks.org", 80, "http");
+
+        GetMethod getMethod = new GetMethod("/mbostock/raw/4090846/us-congress-113.json");
+        client.executeMethod(getMethod);
+
+        //打印服务器返回的状态
+        System.out.println(getMethod.getStatusLine().getStatusCode());
+        if(getMethod.getStatusLine().getStatusCode() == 200){
+            //打印结果页面
+            String response = new String(getMethod.getResponseBodyAsString().getBytes("8859_1"));
+
+            //打印返回的信息
+            System.out.println(response);
+        }
+        getMethod.releaseConnection();
+ </code>
+[httpfetch]是有赞移动 Web UI 规范 `ZanUI` 的小程序现实版本，结合了微信的视觉规范，为用户提供更加统一的使用感受。
 
 包含 badge、btn、card、cell、color、dialog、form、helper、icon、label、loadmore、panel、quantity、steps、tab、toast、toptip 共计 17 类组件或元素。
 
