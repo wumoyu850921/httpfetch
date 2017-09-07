@@ -1,8 +1,5 @@
-<p>
-<a href="https://github.com/youzan/"><img alt="有赞logo" width="36px" src="https://img.yzcdn.cn/public_files/2017/02/09/e84aa8cbbf7852688c86218c1f3bbf17.png" alt="youzan">
-</p></a>
 <p align="center">
-    <img alt="项目logo" src="https://img.yzcdn.cn/public_files/2017/02/06/ee0ebced79a80457d77ce71c7d414c74.png">
+    <font style="font-size:30px;">H</font>
 </p>
 <p align="center">高颜值、好用、易扩展的小程序 UI 库</p>
 
@@ -151,12 +148,3 @@ Page(Object.assign({}, Zan.Toast, {
 ## 贡献
 
 如果你有好的意见或建议，欢迎给我们提 [issue] 或 [PR]，为优化 [ZanUI-Weapp] 贡献力量
-
-[ZanUI-WeApp]: https://github.com/youzan/zanui-weapp
-[issue]: https://github.com/youzan/zanui-weapp/issues/new
-[PR]: https://github.com/youzan/zanui-weapp/compare
-[ZanUI WeApp]: https://github.com/youzan/zanui-weapp
-[MIT]: http://opensource.org/licenses/MIT
-[Bower]: https://bower.io/
-[小程序简易教程]: https://mp.weixin.qq.com/debug/wxadoc/dev/
-[小程序框架介绍]: https://mp.weixin.qq.com/debug/wxadoc/dev/framework/MINA.html
