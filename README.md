@@ -1,7 +1,7 @@
 <p align="center">
-    <font style="font-size:30px;">H</font>
+    <span>H</span>
 </p>
-<p align="center">高颜值、好用、易扩展的小程序 UI 库</p>
+<p align="center">让http请求的调用更优雅</p>
 
 
 ## 概述
